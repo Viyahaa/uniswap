@@ -33,7 +33,7 @@ const NETWORK_URLS: { [key in SupportedChainId]: string } = {
 
 export const network = new NetworkConnector({
   urls: NETWORK_URLS,
-  defaultChainId: 1,
+  defaultChainId: 128,
 })
 
 let networkLibrary: Web3Provider | undefined
@@ -68,6 +68,6 @@ export const portis = new PortisConnector({
 // mainnet only
 export const walletlink = new WalletLinkConnector({
   url: NETWORK_URLS[SupportedChainId.MAINNET],
-  appName: 'Uniswap',
+  appName: 'EmevineFinance',
   appLogoUrl: UNISWAP_LOGO_URL,
 })

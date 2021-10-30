@@ -4,7 +4,8 @@ import optimismLogoUrl from 'assets/svg/optimistic_ethereum.svg'
 import ms from 'ms.macro'
 
 export enum SupportedChainId {
-  MAINNET = 1,
+  MAINNET = 128,
+  TESTNET = 256,
   ROPSTEN = 3,
   RINKEBY = 4,
   GOERLI = 5,
@@ -78,12 +79,12 @@ export const CHAIN_INFO: ChainInfo = {
     blockWaitMsBeforeWarning: ms`10m`,
     bridge: 'https://bridge.arbitrum.io/',
     docs: 'https://offchainlabs.com/',
-    explorer: 'https://arbiscan.io/',
-    infoLink: 'https://info.uniswap.org/#/arbitrum',
+    explorer: 'https://hecoinfo.com/tx/',
+    infoLink: 'https://heco.emevinefinance.com/#/swap',
     label: 'Arbitrum',
     logoUrl: arbitrumLogoUrl,
-    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
-    rpcUrls: ['https://arb1.arbitrum.io/rpc'],
+    nativeCurrency: { name: 'HECO', symbol: 'HECO', decimals: 18 },
+    rpcUrls: ['https://http-mainnet-node.huobichain.com'],
   },
   [SupportedChainId.ARBITRUM_RINKEBY]: {
     blockWaitMsBeforeWarning: ms`10m`,
@@ -97,12 +98,12 @@ export const CHAIN_INFO: ChainInfo = {
     rpcUrls: ['https://rinkeby.arbitrum.io/rpc'],
   },
   [SupportedChainId.MAINNET]: {
-    docs: 'https://docs.uniswap.org/',
-    explorer: 'https://etherscan.io/',
-    infoLink: 'https://info.uniswap.org/#/',
-    label: 'Ethereum',
-    logoUrl: ethereumLogoUrl,
-    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+    docs: 'https://d ocs.uniswap.org/',
+    explorer: 'https://hecoinfo.com/',
+    infoLink: 'https://heco.emevinefinance.com/#/swap',
+    label: 'HECO',
+    logoUrl: hecoLogoUrl,
+    nativeCurrency: { name: 'HECO', symbol: 'HECO', decimals: 18 },
   },
   [SupportedChainId.RINKEBY]: {
     docs: 'https://docs.uniswap.org/',
